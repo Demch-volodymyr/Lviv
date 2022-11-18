@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Beautiful cities in Ukraine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html{
+            height: 100%;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: #0066eb;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            
+            /* only for demonstration, should be removed */
+            background: #fa0909;
+            padding: 20px;
+            flex: 1 1 auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(245, 255, 98);
+            color:#0e4c9d;  
+            flex: 1 1 auto;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 0;
+        }
+        section{
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: row;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .hrf{
+            text-decoration: none;
+            color:white;
+        }
+        .hrf:hover{
+            transition: 0.3s ease all;
+            color:rgb(228, 228, 228)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div></div>
+        <h2>Beautiful cities in Ukraine</h2>
+    </header>
+
+    <section>
+        <article>
+            <h1>Lviv</h1>
+                <form action="https://uk.wikipedia.org/wiki/Львів" method="get" target="_blank">
+                 <button type="submit"btn btn-link"><img src="index.jpg" width="300" style="border-radius: 5px;" /></button>
+                </form>
+ 
+            <p> Lviv is beautiful city
+
+        </article>
+    </section>
+    <section>
+        <article>
+            <h1>Kiyv</h1>
+                <form action="https://uk.wikipedia.org/wiki/%D0%9A%D0%B8%D1%97%D0%B2" method="get" target="_blank">
+                 <button type="submit"btn btn-link"><img src="index2.jpg" width="300"; style="border-radius: 5px;" /></button>
+                </form>
+ 
+            <p> Kiyv is beautiful city
+
+        </article>
+    </section>
+    <section>
+        <article>
+            <h1>Odessa</h1>
+                <form action="https://uk.wikipedia.org/wiki/Одеса" method="get" target="_blank">
+                 <button type="submit"btn btn-link"><img src="index3.jpg" width="300"; style="border-radius: 5px;" /></button>
+                </form>
+ 
+            <p> Odessa is beautiful city
+
+        </article>
+    </section>
+</body>
+
+</html>
